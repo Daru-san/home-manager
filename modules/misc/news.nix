@@ -1401,6 +1401,14 @@ in {
         '';
       }
 
+      {
+        time = "2024-01-31T16:37:00+00:00";
+        condition = config.services.swayosd.maxVolume;
+        message = ''
+          The option 'services.swayosd.maxVolume' has been deprecated.
+        '';
+      }
+
     ];
   };
 }
