@@ -489,4 +489,10 @@
     github = "britter";
     githubId = 1327662;
   };
+  daru-san = {
+    name = "Daru";
+    email = "135046711+Daru-san@users.noreply.github.com";
+    github = "Daru-san";
+    githubId = 135046711;
+  };
 }
