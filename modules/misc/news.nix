@@ -1403,12 +1403,19 @@ in {
 
       {
         time = "2024-01-31T16:37:00+00:00";
-        condition = config.services.swayosd.maxVolume;
+        condition = config.services.swayosd.enable;
         message = ''
           The option 'services.swayosd.maxVolume' has been deprecated.
         '';
       }
 
+      {
+        time = "2024-01-31T17:20:00+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'services.swaync'
+        '';
+      }
     ];
   };
 }
