@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ { config, lib, pkgs, ... }:
 
 with lib;
 
@@ -7,7 +7,7 @@ let
   cfg = config.services.swayosd;
 
 in {
-  meta.maintainers = [ hm.maintainers.pltanton ];
+  meta.maintainers = [ hm.maintainers.pltanton hm.maintainers.daru-san ];
 
   options.services.swayosd = {
     enable = mkEnableOption ''
@@ -15,15 +15,6 @@ in {
       caps-lock and volume'';
 
     package = mkPackageOption pkgs "swayosd" { };
-
-    maxVolume = mkOption {
-      type = types.nullOr types.ints.unsigned;
-      default = null;
-      example = 120;
-      description = ''
-        Sets the maximum volume.
-      '';
-    };
   };
 
   config = mkIf cfg.enable {
@@ -40,14 +31,12 @@ in {
           PartOf = [ "graphical-session.target" ];
           After = [ "graphical-session.target" ];
           ConditionEnvironment = "WAYLAND_DISPLAY";
-          Documentation = "man:swayosd(1)";
+          Documentation = "man:swayosd-server(1)";
         };
 
         Service = {
           Type = "simple";
-          ExecStart = "${cfg.package}/bin/swayosd"
-            + (optionalString (cfg.maxVolume != null)
-              " --max-volume ${toString cfg.maxVolume}");
+          ExecStart = "${cfg.package}/bin/swayosd-server";
           Restart = "always";
         };
 

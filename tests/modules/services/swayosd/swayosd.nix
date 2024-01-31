@@ -7,7 +7,6 @@
       name = "swayosd";
       outPath = "@swayosd@";
     };
-    maxVolume = 10;
   };
 
   nmt.script = ''
@@ -19,7 +18,7 @@
           WantedBy=graphical-session.target
 
           [Service]
-          ExecStart=@swayosd@/bin/swayosd --max-volume 10
+          ExecStart=@swayosd@/bin/swayosd-server
           Restart=always
           Type=simple
 
