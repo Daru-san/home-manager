@@ -1,0 +1,10 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+
+  "widgets": [
+    "title",
+    "dnd",
+    "notifications"
+  ]
+}
