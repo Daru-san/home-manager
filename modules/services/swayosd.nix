@@ -7,7 +7,7 @@ let
   cfg = config.services.swayosd;
 
 in {
-  meta.maintainers = [ hm.maintainers.pltanton hm.maintainers.daru-san ];
+  meta.maintainers = [ hm.maintainers.pltanton ];
 
   options.services.swayosd = {
     enable = mkEnableOption ''
