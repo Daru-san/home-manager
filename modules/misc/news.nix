@@ -1401,6 +1401,14 @@ in {
         '';
       }
 
+      {
+        time = "2024-02-01T17:55:00+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'services.swaync'
+        '';
+      }
+
     ];
   };
 }
