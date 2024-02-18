@@ -1402,6 +1402,7 @@ in {
       }
 
       {
+<<<<<<< HEAD
         time = "2024-01-31T16:37:00+00:00";
         condition = config.services.swayosd.enable;
         message = ''
@@ -1411,11 +1412,18 @@ in {
 
       {
         time = "2024-01-31T17:20:00+00:00";
+=======
+        time = "2024-02-01T17:55:00+00:00";
+>>>>>>> 8214515d4fa79242955811da1b81f7396d27ee5d
         condition = hostPlatform.isLinux;
         message = ''
           A new module is available: 'services.swaync'
         '';
       }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8214515d4fa79242955811da1b81f7396d27ee5d
     ];
   };
 }

@@ -4,10 +4,22 @@
 
     package = config.lib.test.mkStubPackage {
       name = "swaynotificationcenter";
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      outPath = "@swaync@";
+    };
+    systemdTarget = "sway-session.target";
+=======
+>>>>>>> 8214515d4fa79242955811da1b81f7396d27ee5d
         outPath = "@swaync@";
     };
     systemdTarget = "sway-session.target";
     };
+<<<<<<< HEAD
+=======
+>>>>>>> swayosd
+>>>>>>> 8214515d4fa79242955811da1b81f7396d27ee5d
   };
 
   nmt.script = ''
@@ -32,4 +44,11 @@
       }
   '';
 }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> swayosd
+>>>>>>> 8214515d4fa79242955811da1b81f7396d27ee5d

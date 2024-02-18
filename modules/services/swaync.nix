@@ -13,7 +13,11 @@ let
 in
 with lib;
 {
+<<<<<<< HEAD
   meta.maintainers = [ maintainers.daru-san ];
+=======
+  meta.maintainers = [ hm.maintainers.daru-san ];
+>>>>>>> 8214515d4fa79242955811da1b81f7396d27ee5d
 
   options.services.swaync = {
     enable = mkEnableOption "Simple GTK notification daemon for wayland";
