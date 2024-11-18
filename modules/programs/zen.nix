@@ -13,7 +13,7 @@ let
 
 in
 {
-  meta.maintainers = [ hm.maintainers.bricked ];
+  meta.maintainers = [ hm.maintainers.daru-san ];
 
   imports = [
     (mkFirefoxModule {
