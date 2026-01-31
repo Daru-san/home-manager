@@ -35472,6 +35472,59 @@ null or package</p>
 </dd>
 <dt>
  <span class="term">
+ <a id="opt-programs.fresh-editor.defaultEditor"></a><a class="term" href="options.xhtml#opt-programs.fresh-editor.defaultEditor"><code class="option">programs.fresh-editor.defaultEditor</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Whether to configure <span class="command"><strong>fresh</strong></span> as the default
+editor using the <code class="envar">EDITOR</code> and <code class="envar">VISUAL</code>
+environment variables.</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+boolean</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting nix">false
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/fresh-editor.nix" target="_top">
+&lt;home-manager/modules/programs/fresh-editor.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
+ <a id="opt-programs.fresh-editor.extraPackages"></a><a class="term" href="options.xhtml#opt-programs.fresh-editor.extraPackages"><code class="option">programs.fresh-editor.extraPackages</code>
+  </a>
+ </span>
+</dt>
+<dd>
+<p>Extra package to add to fresh</p>
+
+<p><span class="emphasis"><em>Type:</em></span>
+list of package</p>
+
+<p><span class="emphasis"><em>Default:</em></span></p><pre><code class="programlisting nix">[ ]
+</code></pre>
+
+<p><span class="emphasis"><em>Example:</em></span></p><pre><code class="programlisting nix">[ pkgs.rust-analyzer ]
+</code></pre>
+
+<p><span class="emphasis"><em>Declared by:</em></span></p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="filename"><a class="filename"  href="https://github.com/nix-community/home-manager/blob/master/modules/programs/fresh-editor.nix" target="_top">
+&lt;home-manager/modules/programs/fresh-editor.nix&gt;
+</a></code>
+</td></tr>
+</table>
+</dd>
+<dt>
+ <span class="term">
  <a id="opt-programs.fresh-editor.settings"></a><a class="term" href="options.xhtml#opt-programs.fresh-editor.settings"><code class="option">programs.fresh-editor.settings</code>
   </a>
  </span>
